@@ -1,0 +1,9 @@
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/a.exe 
+[New Thread 17808.0x394c]
+[New Thread 17808.0x502c]
+[Inferior 1 (process 17808) exited normally]
+No stack.
+Undefined command: "-g".  Try "help".
+Undefined command: "gcc".  Try "help".
+Undefined command: "gdb".  Try "help".
+Undefined command: "".  Try "help".
