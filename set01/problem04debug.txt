@@ -1,0 +1,22 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc .\problem04.c -O0 -g
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> 
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/a.exe
+[New Thread 23232.0x3b2c]
+[New Thread 23232.0x355c]
+enter the values : 4
+enter the values : 5
+the sum of 4 and 5 is 9
+[Inferior 1 (process 23232) exited normally]
+(gdb) q

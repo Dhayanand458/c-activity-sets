@@ -1,0 +1,7 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem11.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.exe
+enter the real number : 12
+enter the imaginary number : 34
+enter the real number : 56
+enter the imaginary number : 34
+the sum of 12.000000 + 56.000000 and 34.000000 + 34.000000 is 68.000000 + 68.000000

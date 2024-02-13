@@ -1,0 +1,91 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb problem12
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\problem12.exe...done.
+(gdb) b 54
+Breakpoint 1 at 0x401608: file problem12.c, line 54.
+(gdb) r 
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/problem12.exe
+[New Thread 2184.0x507c]
+[New Thread 2184.0x25e8]
+enter the number of complex numbers required : 2
+enter the real part : 12
+enter the imaginary part : 12
+enter the real part : 13
+enter the imaginary part : 13
+
+Breakpoint 1, add (a=..., b=...) at problem12.c:54
+54          return result;
+(gdb) print result
+$1 = {real = 12, imaginary = 12}
+(gdb) n
+55      }
+(gdb) n
+add_n_complex (n=2, c=0x61fed0) at problem12.c:59
+59          for(int i = 0; i < n; i++){
+(gdb) n
+60              sum = add(sum, c[i]);
+(gdb) n
+
+Breakpoint 1, add (a=..., b=...) at problem12.c:54
+54          return result;
+(gdb) n
+55      }
+(gdb) n
+add_n_complex (n=2, c=0x61fed0) at problem12.c:59
+59          for(int i = 0; i < n; i++){
+(gdb) n
+62          return sum;
+(gdb) n
+63      }
+(gdb) n
+main () at problem12.c:24
+24      output(n, c, result);
+(gdb)
+12.0 + 12.0i13.0 + 13.0i = 25.0 + 25.0i25       }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) finish
+Run till exit from #0  0x0040128a in __register_frame_info ()
+[Inferior 1 (process 2184) exited normally]
+(gdb) q
+
+
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc .\problem12.c -O0 -g
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb a.exe 
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/a.exe
+[New Thread 9876.0x2ed0]
+[New Thread 9876.0x55c8]
+enter the number of complex numbers required : 4
+enter the real part : 5
+enter the imaginary part : 6
+enter the real part : 7
+enter the imaginary part : 8
+enter the real part : 9
+enter the imaginary part : 2
+enter the real part : 3
+enter the imaginary part : 4
+5.0 + 6.0i7.0 + 8.0i9.0 + 2.0i3.0 + 4.0i = 24.0 + 20.0i[Inferior 1 (process 9876) exited normally]
+(gdb) q

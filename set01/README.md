@@ -137,7 +137,7 @@ The largest of 1,2 and 3 is 3.
 
 ---
 
-8. Write a C program to find sum of _n_ different numbers entered by the user.
+8. Write a C program to find sum of _n_ different numbers entered by the user.W
 
 ***Function Declarations***
 

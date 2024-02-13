@@ -1,0 +1,4 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem09.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.axe 
+enter the value : 4    
+the square root of 4.0 is 2.0

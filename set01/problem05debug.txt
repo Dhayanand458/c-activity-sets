@@ -1,0 +1,74 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb problem05
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\problem11.exe...done.
+(gdb) b 33
+Breakpoint 1 at 0x401544: file problem11.c, line 33.
+(gdb) r
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/problem11.exe
+[New Thread 19236.0x1b18]
+[New Thread 19236.0x4548]
+enter the real number : 3
+enter the imaginary number : 5
+enter the real number : 6
+enter the imaginary number : 7
+
+Breakpoint 1, add_complex (a=..., b=...) at problem11.c:35
+35          result.real = a.real + b.real;
+(gdb) print result
+$1 = {real = 3.39992188e+017, imaginary = 5.88424283e-039}
+(gdb) n
+36          result.imaginary = a.imaginary + b.imaginary;
+(gdb) n
+37          return result;
+(gdb) n
+38      }
+(gdb) n
+main () at problem11.c:19
+19          output(x, y, total);
+(gdb) n
+the sum of 3.000000 + 6.000000 and 5.000000 + 7.000000 is 9.000000 + 12.00000020            return 0;
+(gdb) n
+21      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) finish
+Run till exit from #0  0x0040128a in __register_frame_info ()
+[Inferior 1 (process 19236) exited normally]
+(gdb) q
+
+
+
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc .\problem05.c -O0 -g
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\a.exe...done.
+(gdb) r
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/a.exe
+[New Thread 22552.0x2a80]
+[New Thread 22552.0x3114]
+enter the values : 4
+enter the values : 5
+enter the values : 6
+the largest of 4 and 5 and 6 is 6
+[Inferior 1 (process 22552) exited normally]
+(gdb) q

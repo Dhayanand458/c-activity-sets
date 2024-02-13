@@ -1,0 +1,9 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets> cd set01 
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem12.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.exe
+enter the number of complex numbers required : 2
+enter the real part : 14
+enter the imaginary part : 14
+enter the real part : 15
+enter the imaginary part : 15
+14.0 + 14.0i15.0 + 15.0i = 29.0 + 29.0i

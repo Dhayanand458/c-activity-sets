@@ -7,3 +7,4 @@ Undefined command: "-g".  Try "help".
 Undefined command: "gcc".  Try "help".
 Undefined command: "gdb".  Try "help".
 Undefined command: "".  Try "help".
+"c:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\" ; if ($?) { gcc problem02.c -o problem02 } ; if ($?) { .\problem02 }: Invalid argument.

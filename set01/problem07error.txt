@@ -1,0 +1,4 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem07.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.exe
+enter the value : 3
+the sum of 3 natural numbers  6

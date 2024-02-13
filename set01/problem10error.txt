@@ -1,0 +1,5 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem10.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.exe
+enter the first string : hello
+enter the second string : hellw
+hello is greater than hellw

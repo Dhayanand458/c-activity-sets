@@ -1,0 +1,8 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem08.c
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> ./a.exe
+enter the size of the array : 4
+input array : 3
+2
+1
+6
+the sum of 4 natural numbers is 12

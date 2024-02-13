@@ -1,0 +1,78 @@
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb problem07
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\problem07.exe...done.
+(gdb) b 46
+Breakpoint 1 at 0x4014d2: file problem07.c, line 46.
+(gdb) r
+Starting program: C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01/problem07.exe 
+[New Thread 2528.0x404c]
+[New Thread 2528.0x372c]
+enter the value : 3
+
+Breakpoint 1, sum_n_nos (n=3) at problem07.c:47
+47          int sum = 0;
+(gdb) print result
+No symbol "result" in current context.
+(gdb) n
+48          for(int i = 0; i <= n; i++){
+(gdb) n
+49              sum += i;
+(gdb) n
+48          for(int i = 0; i <= n; i++){
+(gdb) n
+49              sum += i;
+(gdb) n
+48          for(int i = 0; i <= n; i++){
+(gdb) n
+49              sum += i;
+(gdb) n
+48          for(int i = 0; i <= n; i++){
+(gdb) n
+49              sum += i;
+(gdb) n
+48          for(int i = 0; i <= n; i++){
+(gdb) n
+51          return sum;
+(gdb) n
+52      }
+(gdb) n
+main () at problem07.c:35
+35          output(n, sum);
+(gdb) n
+the sum of 3 natural numbers  636           return 0;
+(gdb) n
+37      }
+(gdb) n
+0x00401288 in __register_frame_info ()
+(gdb) n
+Single stepping until exit from function __register_frame_info,
+which has no line number information.
+0x0040128a in __register_frame_info ()
+(gdb) finish
+Run till exit from #0  0x0040128a in __register_frame_info ()
+[Inferior 1 (process 2528) exited normally]
+(gdb) q
+
+
+
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gcc problem07.c -O0 -g   
+PS C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\DHAYANAND MB\Desktop\PSC-DESTINATION\c-activity-sets\set01\a.exe...done.
+(gdb) q
